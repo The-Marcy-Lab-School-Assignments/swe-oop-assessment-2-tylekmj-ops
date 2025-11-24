@@ -107,6 +107,10 @@ console.log(counterB.count);
 
 ---
 
+The `this` keyword in `JavaScript` is primarily used inside of **methods** as a way to reference the current **instance** of an **object** **invoking** the method the `this` keyword is in.
+
+In the coding example above, the `this` keyword depends on which instance of the `Counter` **class** is being called. For example, when the `counterA` variable is being used as an instance of the `Counter` Class, then invoking a method with ` counterA` would make `this ` refer to counterA's version of the `Counter` Class. Same thing with `counterB`. Which is also why `count` inside of `increment()` has 2 separate values because `this` doesn't refer to `Counter` in general, but the instance using `Counter` instead.
+
 ## Question 3
 
 In your own words, explain what **polymorphism** means in OOP. Provide an example in code that demonstrates polymorphism.
